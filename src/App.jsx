@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SideBar from './SideBar/SideBar';
 import Home from './Pages/Home';
 import Shop from './Pages/Shop';
+import { OrderProvider } from './context/context';
 
 const App = () => {
   return (
+    <OrderProvider>
     <Router>
       <div className="flex">
         <SideBar />
@@ -17,6 +19,7 @@ const App = () => {
         </div>
       </div>
     </Router>
+    </OrderProvider>
   );
 };
 
