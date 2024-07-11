@@ -83,7 +83,7 @@ const Order = () => {
         <p className="mb-2">Delivery fee: ${deliveryFee}</p>
         <p className="font-bold text-lg">Total: ${total}</p>
 
-        <button className="bg-red-500 text-white px-4 py-2 rounded mt-4">Checkout</button>
+        <button className="bg-red-500 text-white px-4 py-1 rounded-lg mt-4 mx-14">Buy </button>
       </div>
     </div>
   );
