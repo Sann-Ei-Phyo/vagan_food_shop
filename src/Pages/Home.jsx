@@ -3,16 +3,16 @@ import Items from '../assets/constants/items'
 
 const Home = () => {
   return (
-    <div className='mx-5 mt-3 w-full '>
-            <h1 className='text-red-500 text-4xl font-bold'>Hi there, Welcome To Vegan Land !!</h1>
+    <div className='  mt-3 w-full ml-[5rem] sm:ml-[16rem]'>
+            <h1 className='text-red-500 text-4xl sm:ml-[5rem] font-bold'>Hi there, Welcome To Vegan Land !!</h1>
 
-        <div className='w-[60rem]'>
+        <div className= ' w-[23rem] mt-5 sm:ml-[2rem] sm:w-[50rem]'>
           <Items/>
         </div>
 
-      <div className='flex gap-5 mt-8' >
+      <div className='sm:flex  sm:gap-5 mt-8' >
         {/**About */}
-      <div className='w-[28rem] border border-gray-300 px-5 py-2 rounded-lg ' >
+      <div className='w-[23rem] sm:w-[28rem] mb-3 border border-gray-300 px-5 py-2 rounded-lg ' >
            <h1 className='font-bold text-red-500 text-2xl'>
             About Us
           </h1>
@@ -31,7 +31,7 @@ const Home = () => {
       </div>
        {/***benefit */}
 
-       <div className='w-[28rem] border border-gray-300 px-5 py-2 rounded-lg ' >
+       <div className='w-[23rem] sm:w-[28rem] border mb-3 border-gray-300 px-5 py-2 rounded-lg ' >
        <h1 className='font-bold text-red-500 text-2xl'>
             Benefits of Vegan Food
           </h1>

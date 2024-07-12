@@ -19,7 +19,7 @@ const Shop = () => {
   return (
     <div className='flex gap-5 w-full h-full'>
       <div className='flex-row ml-9 '>
-        <div className='mt-9'>
+        <div className='mt-9 flex ml-[4rem]'>
           <input
             type='text'
             placeholder='Search food ...'
@@ -35,7 +35,7 @@ const Shop = () => {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 rounded-lg px-3 pt-3 overflow-y-auto bg-gray-100 h-[30rem] mt-8 w-[48rem] gap-4">
+        <div className=" ml-[5rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 rounded-lg px-3 pt-3 overflow-y-auto bg-gray-100 h-[30rem] mt-8 w-[20rem] sm:w-[55rem] gap-4">
           {filteredItems.map(item => (
             <div key={item.id} className="bg-white p-4 rounded-lg h-[19rem] shadow-md cursor-pointer" onClick={() => addItem(item)}>
               <img src={item.image} alt={item.title} className="w-full h-[8rem] object-cover rounded-t-lg" />
